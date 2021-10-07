@@ -11,6 +11,14 @@ export interface ScentData {
   Rooms?: string
   Description?: string
   ImageURL?: string
+  CLPWaxMelt?: string
+  WaxMeltPictogram?: string
+  CLPCandle?: string
+  CandlePictogram?: string
+  CLPRoomDiffuser?: string
+  RoomDiffuserPictogram?: string
+  CLPRoomSpray?: string
+  RoomSprayPictogram?: string
 }
 
 const makeSlug = (str?: string) => {

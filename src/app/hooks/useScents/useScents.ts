@@ -39,7 +39,7 @@ const getScentData = (rows: SpreadSheetRow[]): ScentData[] => {
 
     row.map((rowValue, idx) => {
       const columnName: string = columns[idx]
-      if (columnName) rowData[columnName.replace(' ', '')] = rowValue
+      if (columnName) rowData[columnName.replace(/\s+/g, '')] = rowValue
     })
 
     return rowData

@@ -10,6 +10,7 @@ const isDev = process.env.NODE_ENV === 'development'
 const config: Configuration = {
   entry: {
     ScentsPage: path.resolve(process.cwd(), 'src/app/pages/ScentsPage/index.tsx'),
+    ProductPage: path.resolve(process.cwd(), 'src/app/pages/ProductPage/index.tsx'),
   },
   output: {
     path: path.resolve(process.cwd(), 'dist'),
